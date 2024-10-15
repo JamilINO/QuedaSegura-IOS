@@ -24,14 +24,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		672D18E22CBEB725007DBF70 /* QuedaSegura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuedaSegura.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		672D18E22CBEB725007DBF70 /* Queda Segura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Queda Segura.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		672D18F32CBEB726007DBF70 /* QuedaSeguraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuedaSeguraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		672D18FD2CBEB726007DBF70 /* QuedaSeguraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuedaSeguraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		672D19142CBEBA82007DBF70 /* Exceptions for "QuedaSegura" folder in "QuedaSegura" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 672D18E12CBEB725007DBF70 /* QuedaSegura */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		672D18E42CBEB725007DBF70 /* QuedaSegura */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				672D19142CBEBA82007DBF70 /* Exceptions for "QuedaSegura" folder in "QuedaSegura" target */,
+			);
 			path = QuedaSegura;
 			sourceTree = "<group>";
 		};
@@ -85,7 +98,7 @@
 		672D18E32CBEB725007DBF70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				672D18E22CBEB725007DBF70 /* QuedaSegura.app */,
+				672D18E22CBEB725007DBF70 /* Queda Segura.app */,
 				672D18F32CBEB726007DBF70 /* QuedaSeguraTests.xctest */,
 				672D18FD2CBEB726007DBF70 /* QuedaSeguraUITests.xctest */,
 			);
@@ -114,7 +127,7 @@
 			packageProductDependencies = (
 			);
 			productName = QuedaSegura;
-			productReference = 672D18E22CBEB725007DBF70 /* QuedaSegura.app */;
+			productReference = 672D18E22CBEB725007DBF70 /* Queda Segura.app */;
 			productType = "com.apple.product-type.application";
 		};
 		672D18F22CBEB726007DBF70 /* QuedaSeguraTests */ = {
@@ -394,6 +407,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"QuedaSegura/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuedaSegura/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -410,11 +424,11 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = JamilINO.QuedaSegura;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Queda Segura";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -431,6 +445,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"QuedaSegura/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuedaSegura/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -447,11 +462,11 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = JamilINO.QuedaSegura;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Queda Segura";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
