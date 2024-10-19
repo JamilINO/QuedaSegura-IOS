@@ -12,20 +12,35 @@ struct Logo: View {
         VStack {
 
             VStack{
-                HStack{
-                    Text("Qued↓")
-                }
-                .foregroundStyle(Color("MedTempo_Amarelo"))
-                .shadow(color: Color("MedTempo_Azul"), radius: 0, x: 2, y: 2)
-                    
+                HStack(spacing: 0){
+                    Text("Qued")
+                        .foregroundStyle(Color("MedTempo_Amarelo"))
+                        .shadow(color: Color("MedTempo_Azul"), radius: 0, x: 2, y: 2)
+                    Text("↓")
+                        .foregroundStyle(Color("MedTempo_Azul"))
+                  
+                }.padding(0)
 
-                Text("Segura")
-                    .foregroundStyle(Color("MedTempo_Azul"))
-                    
+    
+                HStack(spacing: 0){
+                    Text("Segur")
+                        .foregroundStyle(Color("MedTempo_Azul"))
+                    Text("a")
+                        .foregroundStyle(Color("MedTempo_Amarelo"))
+                        .foregroundStyle(Color("MedTempo_Amarelo"))
+                        .shadow(color: Color("MedTempo_Azul"), radius: 0, x: 2, y: 2)
+                }
+                
             }
             .font(.custom("Ubuntu-Regular", size: 50))
             .bold()
-
+            .padding(.bottom, 1)
+            
+            Text("dê o próximo passo")
+                .font(.custom("Ubuntu-Regular", size: 18))
+                .foregroundStyle(Color("MedTempo_Azul"))
+                
+                
     
         }
         .padding()

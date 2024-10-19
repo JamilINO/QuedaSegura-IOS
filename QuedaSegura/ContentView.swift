@@ -8,20 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+
     @AppStorage("primeira_vez") var primeira_vez: Bool = true
-    
-    struct Tutorial  {
-        //var redirect: AnyView;
-        var text: String;
-    }
-    
-    let tutoriais: Array<Tutorial> = [
-        Tutorial(text: "Bem Vindo"),
-        Tutorial(text: "Lorem Ipsum Dolor Sit Amet"),
-    ]
+    @State private var aceito: Bool = false
     
     var body: some View {
+  
+        
         ZStack{
+
             //Color(red: background_color, green: background_color, blue: background_color)
             NavigationView{
                 VStack {
@@ -54,20 +49,37 @@ struct ContentView: View {
                         
                         Spacer()
 
-                        ForEach(0 ..< tutoriais.count) { i in
-                            NavigationLink(destination: Tutorial1(msg: tutoriais[i].text), label: {
-                                Text("\(i + 1)) \(tutoriais[i].text)")
-                            })
-                        }
                         
-                        Spacer()
+                        Text("Ao utilizar ao aplicativo você concorda: ")
                         
                         VStack{
-                            Text("Ao utilizar ao aplicativo você concorda: ")
-                            Text("• Com a nossa Licença de Software")
-                            Text("Ao utilizar ao aplicativo você concorda: ")
+                            
+                            NavigationLink {
+                                Text("Lorem Ipsum Dolor Sit Amet")
+                            } label: {
+                                VStack {
+                                    Text("• Com a nossa Licença de Software")
+                                }
+                            }.padding(1)
+
+                            NavigationLink {
+                                PoliticaDePrivacidade()
+                            } label: {
+                                VStack {
+                                    Text("• Com a nossa Política de Privacidade")
+                                }
+                                .padding(1)
+                            }
+ 
                         }
+                        .padding()
                         
+
+                        Toggle("Aceito", isOn: $aceito)
+                            .padding()
+                         //   .tint(/*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/)
+
+                        Spacer()
                         HStack {
                             Button(
                                 action: {
@@ -77,7 +89,8 @@ struct ContentView: View {
                                     Text("Não Obrigado")
                                 }
                             )
-                            
+                           
+                                                        
                             Spacer()
                             
     
@@ -116,6 +129,7 @@ struct ContentView: View {
      
             }.navigationBarTitle("Começando...")
         }
+        
     }
 }
 
